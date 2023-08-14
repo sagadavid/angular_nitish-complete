@@ -1,0 +1,10 @@
+ng new
+ng build
+ng serve
+ctrl c
+ng serve -o
+npm start
+package.json/scripts
+ng new workspace --create-application=false
+cd workspace/ng generate application webapp
+workspace/projects/ng g library anylibrary
