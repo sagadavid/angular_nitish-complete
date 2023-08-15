@@ -8,3 +8,6 @@ package.json/scripts
 ng new workspace --create-application=false
 cd workspace/ng generate application webapp
 workspace/projects/ng g library anylibrary
+workspace2/npm init-->package.json
+npm install
+.gitignore.txt
