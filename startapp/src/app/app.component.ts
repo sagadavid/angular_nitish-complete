@@ -9,6 +9,7 @@ export class AppComponent {
   name: string = 'dave';
   isDisabled: boolean = false;
   txtId = 'sampleId';
+  customClass = 'farge storrelse';
 
   clickSave(): void {
     //alert('you saved it ! ');
