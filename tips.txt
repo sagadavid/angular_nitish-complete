@@ -11,3 +11,4 @@ workspace/projects/ng g library anylibrary
 workspace2/npm init-->package.json
 npm install
 .gitignore.txt
+editorconfig-->settings for developement
