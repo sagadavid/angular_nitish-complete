@@ -9,6 +9,7 @@ export class AppComponent {
   name: string = 'dave';
 
   clickSave(): void {
-    alert('you saved it ! ');
+    //alert('you saved it ! ');
+    this.name = 'name updated';
   }
 }
