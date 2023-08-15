@@ -1,4 +1,5 @@
 <p>{{name}}</p>
-<input type="button" value="save" (click)="clickSave()" (mouseover)="musOver">
-
+<input type="button" value="save" (click)="clickSave()" (mouseover)="musOver" [disabled]='isDisabled'>
+<br>
+<br>
 <input type="text" (change)="bytTxt()" placeholder="just right, click aside :)">

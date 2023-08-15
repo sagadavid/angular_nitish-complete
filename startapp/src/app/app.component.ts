@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name: string = 'dave';
-
+  isDisabled: boolean = true;
   clickSave(): void {
     //alert('you saved it ! ');
     this.name = 'name updated';
