@@ -16,4 +16,8 @@ export class AppComponent {
   musOver(): void {
     this.name = 'back to dave';
   }
+
+  bytTxt(): void {
+    this.name = 'navn endring akseptert !';
+  }
 }
