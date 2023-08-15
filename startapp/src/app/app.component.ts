@@ -9,7 +9,7 @@ export class AppComponent {
   name: string = 'dave';
   isDisabled: boolean = false;
   txtId = 'sampleId';
-  customClass = ['farge', 'storrelse'];
+  customClass = { farge: false, storrelse: true };
 
   clickSave(): void {
     //alert('you saved it ! ');
