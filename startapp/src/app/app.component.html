@@ -1,9 +1,15 @@
-<h1> interpolation is one sided </h1>
-<p>interpolation: 1+1={{1+1}} & name={{name}}</p>
-<h2>get name : {{getName()}}</h2>
-<ul>
-  <li><p>employees are {{employees}}</p></li>
-  <li><p>employX name is {{employX.name}}</p></li>
-</ul>
-<img src="{{employX.src}} alt={{employX.alt}}">
 
+<p>{{name}}</p>
+<br>
+<input type="button" value="save" (click)="clickSave()" (mouseover)="musOver" >
+<br>
+<input type="text" (change)="bytTxt()" placeholder="disable false by interpolation" disabled='{{isDisabled}}'>
+<br>
+<input type="text" (change)="bytTxt()" placeholder="disable false  by property binding" [disabled]='isDisabled'>
+<br>
+<input type="text"  (change)="bytTxt()" placeholder="textid by interpolation" id="txtId">
+<br>
+<input type="text"  (change)="bytTxt()" placeholder="textid by property binding" [id]="txtId">
+
+<p [class]="customClass">interpolation transfers value as string</p>
+<p>property binding transfers value as value type</p>
