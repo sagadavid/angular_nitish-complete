@@ -1,5 +1,15 @@
+
 <p>{{name}}</p>
-<input type="button" value="save" (click)="clickSave()" (mouseover)="musOver" [disabled]='isDisabled'>
 <br>
+<input type="button" value="save" (click)="clickSave()" (mouseover)="musOver" >
 <br>
-<input type="text" (change)="bytTxt()" placeholder="just right, click aside :)">
+<input type="text" (change)="bytTxt()" placeholder="disable false by interpolation" disabled='{{isDisabled}}'>
+<br>
+<input type="text" (change)="bytTxt()" placeholder="disable false  by property binding" [disabled]='isDisabled'>
+<br>
+<input type="text"  (change)="bytTxt()" placeholder="textid by interpolation" id="txtId">
+<br>
+<input type="text"  (change)="bytTxt()" placeholder="textid by property binding" [id]="txtId">
+
+<p>interpolation transfers value as string</p>
+<p>property binding transfers value as value type</p>
