@@ -9,7 +9,7 @@ export class AppComponent {
   name: string = 'dave';
   isDisabled: boolean = false;
   txtId = 'sampleId';
-  customClass = { farge: this.isDisabled, storrelse: true };
+  customClass = { farge: this.isDisabled, storrelse: this.boo() };
 
   clickSave(): void {
     //alert('you saved it ! ');
@@ -22,5 +22,8 @@ export class AppComponent {
 
   bytTxt(): void {
     this.name = 'navn endring akseptert !';
+  }
+  boo() {
+    return true;
   }
 }
