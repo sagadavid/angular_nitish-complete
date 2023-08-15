@@ -9,7 +9,7 @@ export class AppComponent {
   name: string = 'dave';
   isDisabled: boolean = false;
   txtId = 'sampleId';
-  customClass = { farge: this.isDisabled, storrelse: this.boo() };
+  //customClass = { farge: this.isDisabled, storrelse: this.boo() };
 
   clickSave(): void {
     //alert('you saved it ! ');

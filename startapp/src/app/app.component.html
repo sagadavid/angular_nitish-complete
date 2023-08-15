@@ -11,8 +11,8 @@
 <br>
 <input type="text"  (change)="bytTxt()" placeholder="textid by interpolation" id="txtId">
 <br>
-<input type="text"  (change)="bytTxt()" placeholder="textid by property binding" [id]="txtId" [class]="customClass">
+<input type="text"  (change)="bytTxt()" placeholder="textid by property binding" [id]="txtId" [class.storrelse]="false">
 
-<p [class]="customClass">interpolation transfers value as string</p>
+<p [class.farge]="true">interpolation transfers value as string</p>
 <br>
 <p>property binding transfers value as value type</p>
