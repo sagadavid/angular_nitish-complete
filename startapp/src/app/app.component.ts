@@ -10,6 +10,10 @@ export class AppComponent {
   isDisabled: boolean = false;
   txtId = 'sampleId';
   //customClass = { farge: this.isDisabled, storrelse: this.boo() };
+  src =
+    'https://images.unsplash.com/photo-1533228876829-65c94e7b5025?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80';
+  alt = 'unsplash photo';
+  width = 200;
 
   clickSave(): void {
     //alert('you saved it ! ');
