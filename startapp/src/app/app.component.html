@@ -3,13 +3,16 @@
 <br>
 <input type="button" value="save" (click)="clickSave()" (mouseover)="musOver" >
 <br>
+<input type="text" (change)="bytTxt()" placeholder="write, click aside">
+<br>
 <input type="text" (change)="bytTxt()" placeholder="disable false by interpolation" disabled='{{isDisabled}}'>
 <br>
 <input type="text" (change)="bytTxt()" placeholder="disable false  by property binding" [disabled]='isDisabled'>
 <br>
 <input type="text"  (change)="bytTxt()" placeholder="textid by interpolation" id="txtId">
 <br>
-<input type="text"  (change)="bytTxt()" placeholder="textid by property binding" [id]="txtId">
+<input type="text"  (change)="bytTxt()" placeholder="textid by property binding" [id]="txtId" [class]="customClass">
 
 <p [class]="customClass">interpolation transfers value as string</p>
+<br>
 <p>property binding transfers value as value type</p>
