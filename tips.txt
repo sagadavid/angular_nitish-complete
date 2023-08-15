@@ -12,3 +12,7 @@ workspace2/npm init-->package.json
 npm install
 .gitignore.txt
 editorconfig-->settings for developement
+ng g c hjem  
+ng g c login --skip-tests=true 
+ng g c path1/paht2/logut --skip-tests 
+ng g c signup --flat --skip-tests
