@@ -12,4 +12,8 @@ export class AppComponent {
     //alert('you saved it ! ');
     this.name = 'name updated';
   }
+
+  musOver(): void {
+    this.name = 'back to dave';
+  }
 }
