@@ -6,6 +6,7 @@ import { HjemComponent } from './hjem/hjem.component';
 import { LoginComponent } from './login/login.component';
 import { LogutComponent } from './path1/paht2/logut/logut.component';
 import { SignupComponent } from './signup.component';
+import { CompiComponent } from './compi/compi.component';
 
 @NgModule({
   declarations: [
@@ -13,12 +14,11 @@ import { SignupComponent } from './signup.component';
     HjemComponent,
     LoginComponent,
     LogutComponent,
-    SignupComponent
+    SignupComponent,
+    CompiComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

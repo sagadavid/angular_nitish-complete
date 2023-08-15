@@ -16,3 +16,4 @@ ng g c hjem
 ng g c login --skip-tests=true 
 ng g c path1/paht2/logut --skip-tests 
 ng g c signup --flat --skip-tests
+ng g c component3 --prefix davis
