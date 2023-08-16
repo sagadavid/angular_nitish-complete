@@ -24,7 +24,7 @@
 <button [disabled]="!ovelsesText.value">save</button> -->
 <p [style]="bindendeStyle">page works </p>
 <div>
-  <ul hidden="show">
+  <ul *ngIf="show && isDisabled">
     <p>tall</p>
     <li>en</li>
     <li>to</li>

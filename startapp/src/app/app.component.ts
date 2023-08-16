@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name: string = 'dave';
-  isDisabled: boolean = false;
+  isDisabled: boolean = true;
   txtId = 'sampleId';
   //customClass = { farge: this.isDisabled, storrelse: this.boo() };
   src =
