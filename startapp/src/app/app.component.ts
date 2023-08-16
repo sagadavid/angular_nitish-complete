@@ -18,7 +18,7 @@ export class AppComponent {
   bindendeStyle = 'color:green; font-style:italic';
   bindendeStyle2 = { color: 'blue', 'font-style': 'italic' };
 
-  show = true;
+  show = false;
 
   clickSave(): void {
     //alert('you saved it ! ');

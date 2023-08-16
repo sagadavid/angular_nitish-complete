@@ -22,12 +22,18 @@
 <!-- <input type="text" #ovelsesText value=""><br>
 {{ovelsesText.value}}<br>
 <button [disabled]="!ovelsesText.value">save</button> -->
+
 <p [style]="bindendeStyle">page works </p>
-<div>
-  <ul *ngIf="show && isDisabled">
-    <p>tall</p>
+
+<div *ngIf="show; else elsing">
+  <ul ><p>if side works</p>
     <li>en</li>
     <li>to</li>
     <li>tre</li>
   </ul>
 </div>
+
+<ng-template #elsing>
+  <p>else side works</p>
+</ng-template>
+
