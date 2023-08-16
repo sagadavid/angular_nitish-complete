@@ -25,13 +25,11 @@
 
 <p [style]="bindendeStyle">page works </p>
 
-<div *ngIf="show; else elsing">
-  <ul ><p>if side works</p>
-    <li>en</li>
-    <li>to</li>
-    <li>tre</li>
-  </ul>
-</div>
+<div *ngIf="show; then ifing else elsing"></div>
+
+<ng-template #ifing>
+  <p>if side works</p>
+</ng-template>
 
 <ng-template #elsing>
   <p>else side works</p>
