@@ -1,37 +1,5 @@
-<!-- <p [style]="bindendeStyle" [style.color]="'green'">{{name}}</p>
-<p [style.font-size.px]="'40'" [style]="bindendeStyle2">{{name}}</p>
-<br>
-<input type="button" value="save" (click)="clickSave()" (mouseover)="musOver" >
-<br>
-<input type="text" (change)="bytTxt()" placeholder="write, click aside">
-<br>
-<input type="text" (change)="bytTxt()" placeholder="disable false by interpolation" disabled='{{isDisabled}}'>
-<br>
-<input type="text" (change)="bytTxt()" placeholder="disable false  by property binding" [disabled]='isDisabled'>
-<br>
-<input type="text"  (change)="bytTxt()" placeholder="textid by interpolation" id="txtId">
-<br>
-<input type="text"  (change)="bytTxt()" placeholder="textid by property binding" [id]="txtId" [class.storrelse]="false">
-
-<p [class.farge]="true">interpolation transfers value as string</p>
-<br>
-<p class="farge">property binding transfers value as value type</p>
-
-<img [attr.src]="src" [attr.alt]="alt" [attr.width]="width"> -->
-
-<!-- <input type="text" #ovelsesText value=""><br>
-{{ovelsesText.value}}<br>
-<button [disabled]="!ovelsesText.value">save</button> -->
-
-<p [style]="bindendeStyle">page works </p>
-
-<div *ngIf="show; then ifing else elsing"></div>
-
-<ng-template #ifing>
-  <p>if side works</p>
-</ng-template>
-
-<ng-template #elsing>
-  <p>else side works</p>
-</ng-template>
-
+<ul>
+  <li *ngFor="let employee of employees">
+    {{employee}}
+  </li>
+</ul>
