@@ -15,6 +15,8 @@ export class AppComponent {
   alt = 'unsplash photo';
   width = 200;
 
+  bindendeStyle = 'color:green; font-style:italic';
+
   clickSave(): void {
     //alert('you saved it ! ');
     this.name = 'name updated';
