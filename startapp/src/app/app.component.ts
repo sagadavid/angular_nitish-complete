@@ -18,6 +18,8 @@ export class AppComponent {
   bindendeStyle = 'color:green; font-style:italic';
   bindendeStyle2 = { color: 'blue', 'font-style': 'italic' };
 
+  show = true;
+
   clickSave(): void {
     //alert('you saved it ! ');
     this.name = 'name updated';
