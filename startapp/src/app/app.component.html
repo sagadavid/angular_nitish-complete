@@ -1,5 +1,24 @@
+<p>*ngFor with array </p>
 <ul>
   <li *ngFor="let employee of employees">
     {{employee}}
   </li>
 </ul>
+
+<p>*ngFor with objects list array</p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Salary</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employeesList">
+      <td>{{employee.name}}</td>
+      <td>{{employee.salary}}</td>
+      <td>{{employee.location}}</td>
+    </tr>
+  </tbody>
+</table>

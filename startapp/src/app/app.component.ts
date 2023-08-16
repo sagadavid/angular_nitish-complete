@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   employees = ['jimmy', 'jonny', 'jenny', 'jacky'];
+  employeesList = [
+    { name: 'weli', salary: '1300', location: 'uk' },
+    { name: 'eli', salary: '1100', location: 'usa' },
+    { name: 'deli', salary: '700', location: 'sweden' },
+    { name: 'reli', salary: '1400', location: 'danmark' },
+  ];
 }
