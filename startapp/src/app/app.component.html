@@ -1,25 +1,30 @@
 <p>*ngFor with array </p>
 <ul>
-  <li *ngFor="let employee of employees; index as i">
-    {{i+1}} {{employee}}
+  <li *ngFor="let employee of employees; index as i; ; first as isFirst; last as isLast">
+    {{i+1}} {{employee}} : isFirst? {{isFirst}} : isLast? {{isLast}}
   </li>
 </ul>
 
 <p>*ngFor with objects list array</p>
-<table>
+<table border="1">
   <thead>
     <tr>
+      <th>index</th>
       <th>Name</th>
       <th>Salary</th>
       <th>Location</th>
+      <th>isFirst?</th>
+      <th>isLast?</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let employee of employeesList; index as i">
+    <tr *ngFor="let employee of employeesList; index as i; first as isFirst; last as isLast">
       <td>{{i+1}}</td>
       <td>{{employee.name}}</td>
       <td>{{employee.salary}}</td>
       <td>{{employee.location}}</td>
+      <td>{{isFirst}}</td>
+      <td>{{isLast}}</td>
     </tr>
   </tbody>
 </table>
