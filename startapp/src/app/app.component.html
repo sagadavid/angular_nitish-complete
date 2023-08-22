@@ -15,16 +15,20 @@
       <th>Location</th>
       <th>isFirst?</th>
       <th>isLast?</th>
+      <th>isEven?</th>
+      <th>isOdd?</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let employee of employeesList; index as i; first as isFirst; last as isLast">
+    <tr *ngFor="let employee of employeesList; index as i; first as isFirst; last as isLast; even as isEven, odd as isOdd">
       <td>{{i+1}}</td>
       <td>{{employee.name}}</td>
       <td>{{employee.salary}}</td>
       <td>{{employee.location}}</td>
       <td>{{isFirst}}</td>
       <td>{{isLast}}</td>
+      <td>{{isEven}}</td>
+      <td>{{isOdd}}</td>
     </tr>
   </tbody>
 </table>
