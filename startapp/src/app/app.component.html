@@ -1,7 +1,7 @@
 <p>*ngFor with array </p>
 <ul>
-  <li *ngFor="let employee of employees">
-    {{employee}}
+  <li *ngFor="let employee of employees; index as i">
+    {{i+1}} {{employee}}
   </li>
 </ul>
 
@@ -15,7 +15,8 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let employee of employeesList">
+    <tr *ngFor="let employee of employeesList; index as i">
+      <td>{{i+1}}</td>
       <td>{{employee.name}}</td>
       <td>{{employee.salary}}</td>
       <td>{{employee.location}}</td>
