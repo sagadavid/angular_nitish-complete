@@ -20,7 +20,13 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let employee of employeesList; index as i; first as isFirst; last as isLast; even as isEven, odd as isOdd">
+    <tr *ngFor="let employee of employeesList;
+    index as i;
+    first as isFirst;
+    last as isLast;
+    even as isEven,
+    odd as isOdd,
+    trackBy: trackEmpRefresh">
       <td>{{i+1}}</td>
       <td>{{employee.name}}</td>
       <td>{{employee.salary}}</td>
@@ -32,3 +38,5 @@
     </tr>
   </tbody>
 </table>
+<br/>
+<button (click)="refresh()">refresh</button>
