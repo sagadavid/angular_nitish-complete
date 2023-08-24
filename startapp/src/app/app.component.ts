@@ -28,4 +28,5 @@ export class AppComponent {
     return employee.name;
     //thus, only the changed employee is refreshed. good for performance!
   }
+  valueToSwith = '2';
 }

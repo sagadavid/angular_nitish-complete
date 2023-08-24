@@ -40,3 +40,9 @@
 </table>
 <br/>
 <button (click)="refresh()">refresh</button>
+
+<br/>
+<div [ngSwitch]="valueToSwith">
+  <div *ngSwitchCase="1">value is '1'</div>
+  <div *ngSwitchDefault>value is not '1'</div>
+</div>
